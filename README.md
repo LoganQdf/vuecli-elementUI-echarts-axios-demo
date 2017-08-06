@@ -2,6 +2,11 @@
 
 > A Vue.js project
 
+# vue项目demo  模块化引入了 echarts，element-ui，axios
+# 上手即撸
+
+
+
 ## Build Setup
 
 ``` bash
