@@ -5,7 +5,7 @@
 # vue项目demo  模块化引入了 echarts，element-ui，axios
 # 上手即撸
 
-# gulp 文件中有一件git上传具体可以看gulpfile.js文件
+# gulp 文件中有一键git上传，具体可以看gulpfile.js文件
 
 
 ## Build Setup
