@@ -7,7 +7,7 @@ import router from './router'
 import Element from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 import axios from 'axios'
-Vue.prototype.$ajax = axios
+Vue.prototype.$http = axios
 Vue.use(Element)
 
 

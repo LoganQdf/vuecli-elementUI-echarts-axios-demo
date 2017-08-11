@@ -15,7 +15,7 @@
 
 <script>
 
-import Axios from 'axios'
+//import Axios from 'axios'
 export default {
   name: 'footer',
   data () {
@@ -49,14 +49,14 @@ export default {
   },
   created: function () {
     var self=this;
-    this.$ajax.get('http://localhost:8080/static/test2.json')
+    this.$http.post('/api/getVerif')
       .then(function(response) {
 //          self.pros.push(response.data)
 //          console.log(response.data);
 //          var serdatt=response.data
 //          self.$set("pros", serdatt);
-       self.pros = response.data
-        console.log(self.pros);
+//       self.pros = response.data
+        console.log(response.data.msg);
 
       });
     console.log("建立");
@@ -64,7 +64,7 @@ export default {
   methods: {
     submitForm () {
       var self=this;
-      this.$ajax.get('http://localhost:8080/static/test2.json')
+      this.$http.get('http://localhost:8080/static/test2.json')
         .then(function(response) {
 //          self.pros.push(response.data)
 //          console.log(response.data);
