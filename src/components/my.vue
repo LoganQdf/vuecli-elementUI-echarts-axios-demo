@@ -59,6 +59,19 @@ export default {
         console.log(response.data.msg);
 
       });
+
+    this.$http.post('/list/getVerif')
+      .then(function(response) {
+//          self.pros.push(response.data)
+//          console.log(response.data);
+//          var serdatt=response.data
+//          self.$set("pros", serdatt);
+//       self.pros = response.data
+        console.log(response.data.msg);
+
+      });
+
+
     console.log("建立");
   },
   methods: {

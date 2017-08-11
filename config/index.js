@@ -34,6 +34,13 @@ module.exports = {
         pathRewrite: {
           '^/api': '/api'
         }
+      },
+      '/list': {
+        target: 'http://www.binlive.cn',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/list': '/list'
+        }
       }
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"
@@ -45,14 +52,3 @@ module.exports = {
   }
 }
 
-
-
-//proxyTable: {
-//  '/api': {
-//    target: 'http://your_website',
-//      changeOrigin: true,
-//      pathRewrite: {                //需要rewrite重写的, 如果在服务器端做了处理则可以不要这段
-//      '^/api': ''
-//    }
-//  }
-//}
